@@ -48,8 +48,13 @@ def Comp(x, y):
                 return True
     return False
 
+def printArray(arr):
+    lenn = int(len(arr))
+    for i in range(0, lenn):
+        print(arr[i], end="")
+
 if __name__ == "__main__":
-    #array = readArray()
-    array = [9, 515, 4, 2, 7]
+    array = readArray()
+    #array = [9, 515, 4, 2, 7]
     array = sort(array)
-    print(array)
+    printArray(array)
